@@ -1,0 +1,41 @@
+body {
+    background-color: aliceblue;
+}
+
+#title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 45px;
+    background-color: #A62C2A;
+    color: aliceblue;
+    border-radius: 15px;
+}
+
+#nav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: none;
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    width: 90%;
+    padding-left: 80px;
+}
+
+li {
+    display: inline;
+    padding: 6px;
+}
+
+#livros {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #A62C2A;
+    color: aliceblue;
+    border-radius: 15px;
+    margin: 0;    
+}
+
+
