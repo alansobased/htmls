@@ -34,42 +34,32 @@
         border-radius: 5px;
         border: 1px solid black;
       }
-
-      .manchetes {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+      #manchetes {
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
         padding: 20px;
-        flex-wrap: wrap;
       }
 
-      #p1,
-      #p2 {
-        width: 45%;
-        padding: 15px;
-        border: 2px solid black;
-        border-radius: 8px;
+      #manchetes img {
+        width: 400px;
+      }
+
+      td,
+      tr,
+      th {
+        padding: 20px;
         text-align: center;
+        font-weight: bold;
+        border: solid 1px black;
+        border-radius: 8px;
         background-color: #f5f5f5;
       }
 
-      #p1 img,
-      #p2 img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        border: 1px solid black;
-      }
-
-      @media (max-width: 768px) {
-        .manchetes {
-          flex-direction: column;
-          align-items: center;
-        }
-        #p1,
-        #p2 {
-          width: 90%;
-        }
+      #jornal {
+        position: fixed;
+        top: 10px;
+        left: 3px;
       }
     </style>
     <title>Notícias</title>
@@ -101,33 +91,21 @@
       </p>
     </div>
 
-    <div class="manchetes">
-      <div id="p1">
-        <img src="brasil.webp" alt="" />
-        <h3>Brasil leva vexame da Argentina, e é goleado.</h3>
-        <p>
-          Foi a primeira vez na história que o Brasil sofreu quatro gols em uma
-          partida das Eliminatórias. Alvarez, Enzo, Mac Allister e Giuliano
-          Simeone marcaram para os argentinos, e Matheus Cunha descontou para a
-          Seleção.
-        </p>
-      </div>
-
-      <div id="p2">
-        <img src="lebron.jpeg" alt="" />
-        <h3>
+    <h1>Principais manchetes</h1>
+    <table id="manchetes">
+      <tr>
+        <th><img src="brasil.webp" alt="" /></th>
+        <th><img src="lebron.jpeg" alt="" /></th>
+      </tr>
+      <tr>
+        <td>Brasil leva vexame da Argentina, e é goleado.</td>
+        <td>
           LeBron faz game-winner inacreditável e garante vitória alucinante dos
-          Lakers contra os Pacers
-        </h3>
-        <p>
-          Os Lakers tentaram a virada com Dorian Finney-Smith, mas o ala-pivô
-          foi bloqueado por Turner. Na sequência foi a vez dos Pacers
-          desperdiçarem a cesta, deixando os Lakers com menos de dez segundos de
-          posse. A bola foi para Luka, que tentou um floater curto, que bateu no
-          bico no aro. E com apenas 0.1 no cronômetro, LeBron deu um tapinha
-          salvador para a heroica vitória: 119 x 120.
-        </p>
-      </div>
-    </div>
+          Lakers contra os Pacers.
+        </td>
+      </tr>
+    </table>
+
+    <img src="jornal.webp" alt="" id="jornal" />
   </body>
 </html>
