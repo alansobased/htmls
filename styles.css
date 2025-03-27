@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: #F5F5F5;
 }
 
 #title {
@@ -11,6 +11,7 @@ body {
     background-color: #A62C2A;
     color: aliceblue;
     border-radius: 15px;
+    border: 3px solid #0e1111;
 }
 
 #nav {
@@ -19,10 +20,11 @@ body {
     float: left;
     font-weight: bold;
     margin: 0;
-    padding: 0;
-    align-items: center;
-    width: 90%;
-    padding-left: 80px;
+    padding: 30px;
+    margin-left: 25%;
+    width: 45%;
+    background-color: #0e1111;
+    border-radius: 15px;
 }
 
 li {
@@ -30,12 +32,71 @@ li {
     padding: 6px;
 }
 
+
+
 #livros {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #A62C2A;
+    background-color: #0e1111;
     color: aliceblue;
     border-radius: 15px;
-    margin: 0;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    width: 90%;
+    height: 300px;
+    font-weight: bold;
+}
+
+#livros, th, td {
+    border: 1px solid #0e1111;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    color: aliceblue;
+    background-color: #A62C2A;
+    font-size: 20px;
+    border: 1px solid #0e1111;
+    border-radius: 15px;
+    padding: 20px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    background-color: #A62C2A;
 }
 
 
+#direita {
+    position: fixed;
+    top: 90px;
+    right: 3px;
+    z-index: -1;
+}
+
+#esquerda {
+    position: fixed;
+    top: 90px;
+    left: 3px;
+    z-index: -1;
+}
+
+#baixo-esquerda {
+    position: fixed;
+    bottom: 80px;
+    left: 3px;
+    z-index: -1;
+}
+
+#baixo-direita {
+    position: fixed;
+    bottom: 80px;
+    right: 3px;
+    z-index: -1;
+}
